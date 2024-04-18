@@ -37,7 +37,7 @@ const App = () => {
       }, 1500);
     } else {
       try {
-        await axios.post("http://localhost:2000/api/v1/post", Values);
+        await axios.post(`${window.location.origin}/api/v1/post`, Values);
         setShowSuccessPopup(true);
         setValues({
           name: "",
