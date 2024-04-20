@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Fade } from 'react-awesome-reveal';
+import {Fade}  from 'react-awesome-reveal';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 function Header() {
@@ -17,6 +17,7 @@ function Header() {
   }, [])
 
   return (
+    
     <header className="max-w-6xl flex items-center sm:p-10 p-5 justify-between mx-auto">
       <Fade direction="down" duration={1000}>
         <Link to='/'>
@@ -28,12 +29,12 @@ function Header() {
             />
           </div>
         </Link>
-      </Fade>
-      <Fade direction="down" duration={1000}>
-        <ul className={`mini flex items-center gap-10 font-bold text-white`}>
-          <Link to="/">
-            <li className="link">Home</li>
-          </Link>
+      
+      
+        <ul className={`${
+              toggle ? "mini mini-show" : "mini"
+            } flex items-center justify-center gap-10 font-bold text-white`}>
+          
           <Link to="/contact">
             <li className="link">Contact</li>
           </Link>
@@ -44,22 +45,24 @@ function Header() {
             <li className="link">Terminal</li>
           </Link>
         </ul>
-      </Fade>
-      <Fade direction="down" duration={1000}>
+      
+ 
         <div className="z-[1100] md:hidden">
-          {toggle ? (
-            <XMarkIcon
-              className={`menu-btn ${toggle ? "text-white" : "text-black"}`}
-              onClick={() => setToggle(!toggle)}
-            />
-          ) : (
-            <Bars3Icon
-              className="menu-btn"
-              onClick={() => setToggle(!toggle)}
-            />
-          )}
-        </div>
-      </Fade>
+            {toggle ? (
+              <XMarkIcon
+                className={`menu-btn ${toggle ? "text-black" : "bg-white"}`}
+                onClick={() => setToggle(!toggle)}
+              />
+            ) : (
+              <Bars3Icon
+                className="menu-btn"
+                onClick={() => setToggle(!toggle)}
+              />
+            )}
+          </div>
+
+        </Fade>
+      
     </header>
   );
 }

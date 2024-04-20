@@ -55,11 +55,11 @@ function Home() {
               </a>
               ,{" "}
 
-              <a href="/Ritesh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
+              <Link to ="/Ritesh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
                 <button className="btn" type="button" tabIndex="-1">
                   Resume
                 </button>
-              </a>
+              </Link>
               ,{" "}
               <a href="/contact" aria-label="Go to Contact Page">
                 <button className="btn" type="button" tabIndex="-1">

@@ -96,6 +96,7 @@ const Terminal = () => {
     try {
       const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=42a97d3a34de461a85a62fbd5786efbb');
       const data = await response.json();
+      console.log(data)
       const headlines = data.articles.map(article => article.title);
       const randomHeadlines = headlines.slice(0, 3);
       return randomHeadlines;
@@ -155,7 +156,7 @@ const Terminal = () => {
                     onChange={handleInputChange}
                     className="bg-transparent border-none outline-none "
                     style={{ width: '100%', whiteSpace: 'normal' }}
-                    placeholder="Type `help` command to start."
+                    placeholder="Type `help` to start."
                   />
                 </div>
               </form>
