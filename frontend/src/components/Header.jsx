@@ -38,6 +38,9 @@ function Header() {
           <Link to="/contact">
             <li className="link">Contact</li>
           </Link>
+          <Link to="/project">
+            <li className="link">Projects</li>
+          </Link>
           <Link to="/About">
             <li className="link">About</li>
           </Link>
@@ -45,12 +48,13 @@ function Header() {
             <li className="link">Terminal</li>
           </Link>
         </ul>
-      
- 
+        </Fade>
+        
         <div className="z-[1100] md:hidden">
+        <Fade direction="down" duration={1000}>
             {toggle ? (
               <XMarkIcon
-                className={`menu-btn ${toggle ? "text-black" : "bg-white"}`}
+                className={`menu-btn ${toggle ? "text-white" : "text-black"}`}
                 onClick={() => setToggle(!toggle)}
               />
             ) : (
@@ -59,9 +63,11 @@ function Header() {
                 onClick={() => setToggle(!toggle)}
               />
             )}
+             </Fade>
           </div>
+         
 
-        </Fade>
+        
       
     </header>
   );

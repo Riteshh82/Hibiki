@@ -128,10 +128,8 @@ const Terminal = () => {
             </RoughNotation>
           </div>
         </div>
-      </Fade>
-      <Fade direction="up" duration={1000}>
         <div className="mx-[1rem]">
-          <div className="bg-gray-900 text-white max-w-6xl h-120 mx-auto py-[1rem] mt-[2rem] px-5 lg:gap-[10rem] gap-[2rem] rounded-md ">
+          <div className="bg-gray-900 text-white mb-5 max-w-6xl h-120 mx-auto py-[1rem] mt-[2rem] px-5 lg:gap-[10rem] gap-[2rem] rounded-md ">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500 mr-2"></div>
@@ -154,7 +152,7 @@ const Terminal = () => {
                     type="text"
                     value={input}
                     onChange={handleInputChange}
-                    className="bg-transparent border-none outline-none "
+                    className="bg-transparent border-none outline-none"
                     style={{ width: '100%', whiteSpace: 'normal' }}
                     placeholder="Type `help` to start."
                   />

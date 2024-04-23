@@ -11,10 +11,10 @@ function Home() {
   return (
     <div>
       <Header/>
-      <>
+      
       <Fade Fade direction="up" duration={1000}>
         
-        <div className="mx-auto sm:p-10 mb-0 pb-0 flex justify-center flex-col home max-w-[650px] md:max-w-1xl lg:max-w-6xl mt-[2rem] sm:mt-[0]">
+        <div className="mx-auto flex justify-center lg:items-center flex-col home max-w-[650px] md:max-w-1xl lg:max-w-6xl">
           <div
             className="intro_text text-[3.5rem] md:text-[7vw]"
             data-text="I'm Ritesh Yadav"
@@ -82,11 +82,10 @@ function Home() {
 
             <Arrow className='cursor-grab' link="https://github.com/riteshh82" title='Github'/>
           </div>
-      
+    
         </div>
         </Fade>
         <Footer/>
-      </>
     </div>
   )
 }
