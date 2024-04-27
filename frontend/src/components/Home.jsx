@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 function Home() {
   return (
-    <div>
+    <>
       <Header/>
       
       <Fade Fade direction="up" duration={1000}>
@@ -48,11 +48,11 @@ function Home() {
             <p className="mt-[2rem] text-gray-600 size">
               A minimalist obsessed with the web world, exploring design with
               curiosity. View my{" "}
-              <a href="/project" aria-label="Go to Projects Page">
+              <Link to="/project" aria-label="Go to Projects Page">
                 <button className="btn" type="button" tabIndex="-1">
                   Projects
                 </button>
-              </a>
+              </Link>
               ,{" "}
 
               <Link to ="/Ritesh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
@@ -61,11 +61,11 @@ function Home() {
                 </button>
               </Link>
               ,{" "}
-              <a href="/contact" aria-label="Go to Contact Page">
+              <Link to="/contact" aria-label="Go to Contact Page">
                 <button className="btn" type="button" tabIndex="-1">
                   Contact Me
                 </button>
-              </a>
+              </Link>
               , or send me an email at{" "}
               <a href="mailto:riteshky19@gmail.com">
                 <button
@@ -86,7 +86,7 @@ function Home() {
         </div>
         </Fade>
         <Footer/>
-    </div>
+    </>
   )
 }
 
