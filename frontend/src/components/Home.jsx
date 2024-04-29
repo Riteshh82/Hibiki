@@ -12,7 +12,7 @@ function Home() {
     <>
       <Header/>
       
-      <Fade Fade direction="up" duration={1000}>
+      {/* <Fade Fade direction="up" duration={1000}> */}
         
         <div className="mx-auto flex justify-center lg:items-center flex-col home max-w-[650px] md:max-w-1xl lg:max-w-6xl">
           <div
@@ -84,7 +84,7 @@ function Home() {
           </div>
     
         </div>
-        </Fade>
+        {/* </Fade> */}
         <Footer/>
     </>
   )

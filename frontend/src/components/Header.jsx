@@ -19,7 +19,7 @@ function Header() {
   return (
     
     <header className="max-w-6xl flex items-center sm:p-10 p-5 justify-between mx-auto">
-      <Fade direction="down" duration={1000}>
+      {/* <Fade direction="down" duration={1000}> */}
         <Link to='/'>
           <div className="w-14 h-14 border-black border-2 p-[.8px] rounded-full">
             <img
@@ -48,10 +48,10 @@ function Header() {
             <li className="link">Terminal</li>
           </Link>
         </ul>
-        </Fade>
+        {/* </Fade> */}
         
         <div className="z-[1100] md:hidden">
-        <Fade direction="down" duration={1000}>
+        {/* <Fade direction="down" duration={1000}> */}
             {toggle ? (
               <XMarkIcon
                 className={`menu-btn ${toggle ? "text-white" : "text-black"}`}
@@ -63,7 +63,7 @@ function Header() {
                 onClick={() => setToggle(!toggle)}
               />
             )}
-             </Fade>
+             {/* </Fade> */}
           </div>
          
 

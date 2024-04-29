@@ -19,7 +19,7 @@ function About() {
   return (
    <>
     <Header/>
-    <Fade direction="up" duration={1000}>
+    {/* <Fade direction="up" duration={1000}> */}
       <div className="py-[rem] mt-[1rem] mb-[1rem] px-5 flex   lg:items-center justify-center">
         <RoughNotation
           show="underline"
@@ -30,11 +30,11 @@ function About() {
           About Me
         </RoughNotation>
       </div>
-    </Fade>
+    {/* </Fade> */}
     
     <div className="text-black h-auto">
       <div className="max-w-6xl mx-auto py-[2rem] lg:mt-[4rem] mt-[1rem] mb-[rem] px-5 flex lg:items-center justify-center flex-col lg:flex-row lg:gap-[10rem] gap-[2rem]">
-        <Fade direction="up" duration={1000}>
+        {/* <Fade direction="up" duration={1000}> */}
           <div className="mx-auto border-black rounded-md max-w-[300px] lg:w-[600]">
             <img
               src={data.avatar_url}
@@ -69,7 +69,7 @@ function About() {
               </button>
             </a>
           </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
     </div>
    </>

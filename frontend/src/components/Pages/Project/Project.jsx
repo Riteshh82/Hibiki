@@ -10,7 +10,7 @@ function Project() {
   return (
    <>
     <Header/>
-    <Fade direction="up" duration={1000}>
+    {/* <Fade direction="up" duration={1000}> */}
       <div className="mt-[1rem] mb-[1rem] px-5 flex lg:items-center justify-center">
         <RoughNotation
           show="underline"
@@ -21,9 +21,9 @@ function Project() {
           Projects
         </RoughNotation>
       </div>
-    </Fade>
+    {/* </Fade> */}
       <div className=" flex lg:items-center flex-col lg:flex-row lg:gap-[5rem] gap-[5rem] max-w-6xl mx-auto py-[1rem] lg:mt-[1rem] mt-[1rem] mb-[5rem] px-5 justify-center">
-         <Fade Fade direction="up" duration={1000}>
+         {/* <Fade Fade direction="up" duration={1000}> */}
           <ProjectCard
             photo="https://wallpapercave.com/wp/AB52oQ1.jpg"
             title="Travel With Us"
@@ -50,7 +50,7 @@ function Project() {
 
           
       
-          </Fade>
+          {/* </Fade> */}
       </div>
    </>
   )

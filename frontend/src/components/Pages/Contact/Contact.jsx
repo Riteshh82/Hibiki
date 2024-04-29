@@ -65,7 +65,7 @@ const App = () => {
         {showSuccessPopup && <SuccessPopup message="Thank you so much! 😊" onClose={() => setShowSuccessPopup(false)} />}
         <div className="max-w-6xl mx-auto py-[2rem] mt-[1rem] mb-[4rem] px-5 flex lg:items-center  flex-col lg:flex-row lg:gap-[10rem] gap-[2rem]">
        
-        <Fade Fade direction="up" duration={1000}>
+        {/* <Fade Fade direction="up" duration={1000}> */}
             <div className="max-w-[300px]">
               <RoughNotation
                 show="underline"
@@ -127,7 +127,7 @@ const App = () => {
                 <ArrowUpRightIcon className="h-5 text-white" />
               </button>
             </form>
-          </Fade>
+          {/* </Fade> */}
         </div>
       </div>
     </>
