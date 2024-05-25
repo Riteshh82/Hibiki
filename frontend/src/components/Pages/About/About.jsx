@@ -61,7 +61,7 @@ function About() {
                 strong communication and problem-solving abilities.
               </p>
             </div>
-            <a href="/Ritesh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
+            <a href="/Ritesh_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
               <button className="py-2 px-4 mr-20 rounded-lg bg-zinc-900 hover:bg-zinc-800 gap-3">
                 <span className="font-bold text-white">
                   Resume

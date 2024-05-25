@@ -55,7 +55,7 @@ function Home() {
               </Link>
               ,{" "}
 
-              <Link to ="/Ritesh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
+              <Link to ="/Ritesh_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Resume Page" title="Resume Page">
                 <button className="btn" type="button" tabIndex="-1">
                   Resume
                 </button>

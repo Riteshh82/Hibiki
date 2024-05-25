@@ -66,7 +66,7 @@ const Terminal = () => {
     } else if (trimmedInput === 'contact') {
       response = (
         <div>
-          You can contact us via email at{" "}
+          You can contact me via email at{" "}
           <a href="mailto:riteshky19@gmail.com">riteshky19@gmail.com</a>
         </div>
       );
@@ -115,7 +115,7 @@ const Terminal = () => {
   return (
     <>
       <Header />
-      <Fade direction="up" duration={1000}>
+      {/* <Fade direction="up" duration={1000}> */}
         <div className="mx-[1rem]">
           <div className=" max-w-6xl mx-auto px-5 mt-3">
             <RoughNotation
@@ -161,7 +161,7 @@ const Terminal = () => {
             </pre>
           </div>
         </div>
-      </Fade>
+      {/* </Fade> */}
     </>
   );
 };
