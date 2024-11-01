@@ -25,7 +25,7 @@ function Footer() {
             <GitHubIcon className="" />
           </Link>
 
-          <Link to="https://www.instagram.com/imriteshxo/" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Instagram Page" title="Instagram Page">
+          <Link to="https://www.instagram.com/my_shitstagram/" target="_blank" rel="noopener noreferrer" aria-label="Go To Ritesh Yadav Instagram Page" title="Instagram Page">
             <InstagramIcon className="" />
           </Link>
           </footer>
